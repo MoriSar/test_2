@@ -1,0 +1,8 @@
+{
+  "name": "test-2",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-core": "jasmine#^2.4.1"
+  }
+}

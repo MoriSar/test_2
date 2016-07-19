@@ -26,17 +26,25 @@
     <![endif]-->
     
     <section class="b-page__content">
-    <div class="cssload-loader">
-      <div class="cssload-inner cssload-one"></div>
-      <div class="cssload-inner cssload-two"></div>
-      <div class="cssload-inner cssload-three"></div>
-    </div>
+      <div class="cssload-loader">
+        <div class="cssload-inner cssload-one"></div>
+        <div class="cssload-inner cssload-two"></div>
+        <div class="cssload-inner cssload-three"></div>
+      </div>
       <main class="b-content">
+        <div class="b-content__controll-panel">
+          <div class="b-controll-panel">
+            <p class="b-controll-panel__text">Затраченное время: 0с</p>
+            <input  class="b-controll-panel__button" type="button" value="Старт!">
+            <p class="b-controll-panel__text">Осталось пар: 0</p>
+          </div>
+        </div>
         <table>
           <thead></thead>
           <tbody class="b-content__images"></tbody>
-    </table>
+        </table>
       </main>
+
     </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -59,6 +67,8 @@
     <script src="scripts/MORISAR.module.DOMQuery_Events.js"></script>
     <script src="scripts/MORISAR.module.ajax.js"></script>
     <script src="scripts/MORISAR.module.setUpField.js"></script>
+    <script src="scripts/MORISAR.module.setPictures.js"></script>
+    <script src="scripts/MORISAR.module.catchACoupe.js"></script>
     <script src="scripts/MORISAR.facade.js"></script>
     <script src="scripts/MORISAR.CORE_mediator.js"></script>
     <!-- endbuild -->

@@ -50,7 +50,7 @@ MORISAR.module.DOMQuery_Events = (function () {
 		},
 
 		dqeM__getAttr: function(event, attr) {
-			const target = this.getTarget(event);
+			const target = this.dqeM__getTarget(event);
 			const data = target.getAttribute(attr);
 
 			return data;
@@ -65,17 +65,17 @@ MORISAR.module.DOMQuery_Events = (function () {
 		},
 
 		dqeM__getStyle: function(id) {
-			this.getId(id);
-			return window.getComputedStyle(this.getId(id))
+			this.dqeM__getId(id);
+			return window.getComputedStyle(this.dqeM__getId(id))
 		},
 
 		dqeM__addClass: function(id, className) {
-			const e = this.getId(id);
+			const e = this.dqeM__getId(id);
 			return e.classList.add(className);
 		},
 
 		dqeM__removeClass: function(id, className) {
-			const e = this.getId(id);
+			const e = this.dqeM__getId(id);
 			return e.classList.remove(className);
 		}
 	}

@@ -30,6 +30,7 @@ MORISAR.module.setUpField = (function () {
 				let randomIndex = accessory.getRandomNumber(0, dataIdArray.length - 1);
 				value = dataIdArray[randomIndex];
 				blocks[i].setAttribute('data-id', value);
+				blocks[i].setAttribute('data-checked', false);
 				dataIdArray.splice(randomIndex, 1);
 			};
 		}

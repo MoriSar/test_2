@@ -3,6 +3,7 @@
 
 table {
 	display: inline-block;
+	margin: 10px 0;
 }
 td:hover {
 	background: #434343
@@ -19,4 +20,13 @@ td:hover {
 	background: #000;
 	width: 100px;
 	height: 100px;
+}
+.b-controll-panel {
+	
+}
+.b-controll-panel__text {
+	display: inline;
+}
+.b-controll-panel__button {
+	margin: 0 30px;
 }

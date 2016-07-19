@@ -1,11 +1,11 @@
 'use strict';
 
-MORISAR.namespace('MORISAR.common.DOMQuery_Events');
+MORISAR.namespace('MORISAR.module.DOMQuery_Events');
 
-MORISAR.common.DOMQuery_Events = (function () {
+MORISAR.module.DOMQuery_Events = (function () {
 	
 	return {
-		addEvent: function (el, type, fn) {
+		dqeM__addEvent: function (el, type, fn) {
 			if (typeof addEventListener !== "undefined") {
 				el.addEventListener(type, fn, false);
 			} else if (typeof attachEvent !== "undefined") {
@@ -15,7 +15,7 @@ MORISAR.common.DOMQuery_Events = (function () {
 			}
 		},
 
-		removeEvent: function (el, type, fn) {
+		dqeM__removeEvent: function (el, type, fn) {
 			if (typeof removeEventListener !== "undefined") {
 				el.removeEventListener(type, fn, false);
 			} else if (typeof attachEvent !== "undefined") {
@@ -25,7 +25,7 @@ MORISAR.common.DOMQuery_Events = (function () {
 			}
 		},
 
-		getTarget: function (event) {
+		dqeM__getTarget: function (event) {
 			if (typeof event.target !== "undefined") {
 				return event.target; 
 			} else {
@@ -33,7 +33,7 @@ MORISAR.common.DOMQuery_Events = (function () {
 			};
 		},
 
-		preventDefault: function (event) {
+		dqeM__preventDefault: function (event) {
 			if (typeof event.preventDefault !== "undefined") {
 				event.preventDefault();
 			} else {
@@ -41,42 +41,42 @@ MORISAR.common.DOMQuery_Events = (function () {
 			};
 		},
 
-		getId: function(id) {
+		dqeM__getId: function(id) {
 			return document.getElementById(id)
 		},
 
-		getTag: function(tag) {
+		dqeM__getTag: function(tag) {
 			return document.getElementsByTagName(tag)
 		},
 
-		getAttr: function(event, attr) {
+		dqeM__getAttr: function(event, attr) {
 			const target = this.getTarget(event);
 			const data = target.getAttribute(attr);
 
 			return data;
 		},
 
-		getName: function(name) {
+		dqeM__getName: function(name) {
 			return document.getElementsByName(name);
 		},
 
-		getClass: function(className) {
+		dqeM__getClass: function(className) {
 			return document.getElementsByClassName(className)
 		},
 
-		getStyle: function(id) {
+		dqeM__getStyle: function(id) {
 			this.getId(id);
 			return window.getComputedStyle(this.getId(id))
 		},
 
-		addClass: function(id, className) {
+		dqeM__addClass: function(id, className) {
 			const e = this.getId(id);
 			return e.classList.add(className);
 		},
 
-		removeClass: function(id, className) {
+		dqeM__removeClass: function(id, className) {
 			const e = this.getId(id);
 			return e.classList.remove(className);
 		}
 	}
-}());
+})();

@@ -29,7 +29,7 @@ MORISAR.CORE_mediator = (function() {
 		}
 	};
 
-}());
+})();
 
 MORISAR.CORE_mediator.installTo(MORISAR.facade);
 
@@ -38,11 +38,11 @@ MORISAR.CORE_mediator.installTo(MORISAR.facade);
 ///////////////////////
 
 MORISAR.facade.subscribe('Document ready', function (objConfig) {
-	
+	MORISAR.facade.interface__setUpField(objConfig);
 });
 
 ////////////////////////
 // Publish to modules //
 ////////////////////////
 
-// $(document).ready(MORISAR.facade.publish('Document ready', {}));
+MORISAR.facade.dqeM__addEvent(window, 'load', MORISAR.facade.publish('Document ready', {request: {type: 'GET', url: 'https://kde.link/test/get_field_size.php', async: true, data: null}}));

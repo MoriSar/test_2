@@ -1,4 +1,22 @@
 // bower:scss
 // endbower
 
-
+table {
+	display: inline-block;
+}
+td:hover {
+	background: #434343
+}
+.b-content {
+	display: none;
+	max-width: 900px;
+	width: 80%;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+}
+.item-h {
+	background: #000;
+	width: 100px;
+	height: 100px;
+}

@@ -16,17 +16,28 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/loader.css">
     <!-- endbuild -->
     
   </head>
-  <body>
+  <body class="b-page">
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <div class="b-page">
-      
+    <section class="b-page__content">
+    <div class="cssload-loader">
+      <div class="cssload-inner cssload-one"></div>
+      <div class="cssload-inner cssload-two"></div>
+      <div class="cssload-inner cssload-three"></div>
     </div>
+      <main class="b-content">
+        <table>
+          <thead></thead>
+          <tbody class="b-content__images"></tbody>
+    </table>
+      </main>
+    </section>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -46,6 +57,8 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/MORISAR_init.js"></script>
     <script src="scripts/MORISAR.module.DOMQuery_Events.js"></script>
+    <script src="scripts/MORISAR.module.ajax.js"></script>
+    <script src="scripts/MORISAR.module.setUpField.js"></script>
     <script src="scripts/MORISAR.facade.js"></script>
     <script src="scripts/MORISAR.CORE_mediator.js"></script>
     <!-- endbuild -->

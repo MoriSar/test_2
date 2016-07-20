@@ -30,7 +30,10 @@ MORISAR.module.timer = (function () {
 
 	return {
 
-		tM__startTime: system.startTime
+		tM__startTime: system.startTime,
+		tM__timer: function () {
+			return timerId;
+		}
 
 	}
 

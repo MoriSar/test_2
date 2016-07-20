@@ -15,8 +15,9 @@ MORISAR.module.controllPanel = (function () {
 		 * Старт контроля
 		 * @param  {Array}  blocks    - массив блоков
 		 * @param  {Object} leftCoupe - html объект
+		 * @param  {Number} timerId   - id таймера
 		 */
-		startControll: function (blocks, leftCoupe) {
+		startControll: function (blocks, leftCoupe, timerId) {
 
 			let coupe = [];
 
@@ -28,6 +29,7 @@ MORISAR.module.controllPanel = (function () {
 			leftCoupe.innerHTML = coupe.length / 2;
 
 			if (!coupe.length) {
+				clearInterval(timerId);
 				if (confirm('Игра пройдена! Перейти на следующий уровень?')) {
 					location.reload();
 				}

@@ -40,7 +40,7 @@ MORISAR.facade = (function () {
 					_this.spM__setDefaultPictures(blocks);
 				}, objConfig.timer_1);
 				target.setAttribute('data-started', 'true');
-				this.cpM__startControll(blocks, this.dqeM__getId('leftCoupe'));
+				this.cpM__startControll(blocks, this.dqeM__getId('leftCoupe'), this.tM__timer());
 				this.cpM__checkLevel(blocks)
 				this.tM__startTime(this.dqeM__getId('timer'));
 			} else {
@@ -72,7 +72,7 @@ MORISAR.facade = (function () {
 				blocksObj = this.cacM__catch(objConfig, event, target);
 
 				this.vpM__viewPicture(objConfig, this.sufM__getBlocks(), blocksObj, target);
-				this.cpM__startControll(this.sufM__getBlocks(), this.dqeM__getId('leftCoupe'));
+				this.cpM__startControll(this.sufM__getBlocks(), this.dqeM__getId('leftCoupe'), this.tM__timer());
 			}
 		}
 	}

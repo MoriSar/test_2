@@ -41,8 +41,8 @@ MORISAR.facade.subscribe('Document ready', function (objConfig) {
 	MORISAR.facade.interface__setUpField(objConfig);
 });
 
-MORISAR.facade.subscribe('Start game', function (objConfig) {
-	MORISAR.facade.interface__startGame(objConfig);
+MORISAR.facade.subscribe('Start game', function (objConfig, event) {
+	MORISAR.facade.interface__startGame(objConfig, event);
 });
 
 MORISAR.facade.subscribe('Click on an item', function (objConfig, event) {
@@ -56,9 +56,9 @@ MORISAR.facade.subscribe('Click on an item', function (objConfig, event) {
 MORISAR.facade.dqeM__addEvent(window, 'load', MORISAR.facade.publish('Document ready', {request: {type: 'GET', url: 'https://kde.link/test/get_field_size.php', async: true, data: null}}));
 
 MORISAR.facade.dqeM__addEvent(MORISAR.facade.dqeM__getClass('b-controll-panel__button')[0], 'click', function (event) {
-	MORISAR.facade.publish('Start game', {});
+	MORISAR.facade.publish('Start game', {timer_1: 2000}, event);
 });
 
 MORISAR.facade.dqeM__addEvent(MORISAR.facade.dqeM__getClass('b-content__images')[0], 'click', function (event) {
-	MORISAR.facade.publish('Click on an item', {}, event);
+	MORISAR.facade.publish('Click on an item', {timer_2: 500}, event);
 });

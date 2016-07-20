@@ -34,9 +34,9 @@
       <main class="b-content">
         <div class="b-content__controll-panel">
           <div class="b-controll-panel">
-            <p class="b-controll-panel__text">Затраченное время: 0с</p>
-            <input  class="b-controll-panel__button" type="button" value="Старт!">
-            <p class="b-controll-panel__text">Осталось пар: 0</p>
+            <p class="b-controll-panel__text">Затраченное время: <span id="timer">0 сек.</span></p>
+            <input  class="b-controll-panel__button" type="button" value="Старт!" data-started="false">
+            <p class="b-controll-panel__text">Осталось пар: <span id="leftCoupe">0</span></p>
           </div>
         </div>
         <table>
@@ -69,6 +69,10 @@
     <script src="scripts/MORISAR.module.setUpField.js"></script>
     <script src="scripts/MORISAR.module.setPictures.js"></script>
     <script src="scripts/MORISAR.module.catchACoupe.js"></script>
+    <script src="scripts/MORISAR.module.viewPicture.js"></script>
+    <script src="scripts/MORISAR.module.startStop.js"></script>
+    <script src="scripts/MORISAR.module.controllPanel.js"></script>
+    <script src="scripts/MORISAR.module.timer.js"></script>
     <script src="scripts/MORISAR.facade.js"></script>
     <script src="scripts/MORISAR.CORE_mediator.js"></script>
     <!-- endbuild -->

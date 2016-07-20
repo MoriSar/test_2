@@ -4,9 +4,17 @@
 table {
 	display: inline-block;
 	margin: 10px 0;
+	border-spacing: 5px;
 }
 td:hover {
-	background: #434343
+	-webkit-box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
+	-moz-box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
+	box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
+}
+.item-checked {
+	-webkit-box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
+	-moz-box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
+	box-shadow: inset 0px 0px 150px 40px rgba(255,255,255,.5);
 }
 .b-content {
 	display: none;
@@ -17,7 +25,8 @@ td:hover {
 	text-align: center;
 }
 .item-h {
-	background: #000;
+	background: url('../images/vopros.png') no-repeat;
+	background-size: cover;
 	width: 100px;
 	height: 100px;
 }
@@ -29,4 +38,37 @@ td:hover {
 }
 .b-controll-panel__button {
 	margin: 0 30px;
+}
+.alarm {
+	color: red;
+}
+.bg0{
+	background: url(https://kde.link/test/0.png) no-repeat;
+}
+.bg1{
+	background: url(https://kde.link/test/1.png) no-repeat;
+}
+.bg2{
+	background: url(https://kde.link/test/2.png) no-repeat;
+}
+.bg3{
+	background: url(https://kde.link/test/3.png) no-repeat;
+}
+.bg4{
+	background: url(https://kde.link/test/4.png) no-repeat;
+}
+.bg5{
+	background: url(https://kde.link/test/5.png) no-repeat;
+}
+.bg6{
+	background: url(https://kde.link/test/6.png) no-repeat;
+}
+.bg7{
+	background: url(https://kde.link/test/7.png) no-repeat;
+}
+.bg8{
+	background: url(https://kde.link/test/8.png) no-repeat;
+}
+.bg9{
+	background: url(https://kde.link/test/9.png) no-repeat;
 }
